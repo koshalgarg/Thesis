@@ -1,0 +1,153 @@
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  7 MAY 2018 10:36
+ restricted system commands enabled.
+**Acknowledge.tex
+(./Acknowledge.tex
+LaTeX2e <2017-04-15>
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: C:/Users/me/AppData/Local/MiKTeX/2.9/luatex-cache/generic
+)
+luaotfload | conf : Root cache directory is C:/Users/me/AppData/Local/MiKTeX/2.9
+/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “C:/Program Files/MiKTeX 2.9/tex/luatex/luaotfload/fontloader-2
+017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/me/AppData/Local/MiKTeX/2.9
+/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.578 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.2 \SpecialTitle
+               {Acknowledgment}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \SpecialTitle{A
+                 cknowledgment}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
+[]Acknowledgment 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 F
+   irst of all I would like to express my deepest respect and gratitude towa...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--14
+[]First
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 I
+     would also like to thank the PhD researchers and my fellow Masters stud...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--32
+[]I
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \begin{minipage}{.45\linewidth}
+                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 39.
+luaotfload | db : Font names database loaded from C:/Users/me/AppData/Local/MiKT
+eX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/me/App
+Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
+Overfull \hbox (29.16pt too wide) in paragraph at lines 42--42
+ \TU/lmr/m/it/10 Koshal
+ []
+
+
+Overfull \hbox (16.13pt too wide) in paragraph at lines 42--42
+ \TU/lmr/m/it/10 Ku-
+ []
+
+
+Overfull \hbox (17.51pt too wide) in paragraph at lines 42--42
+ \TU/lmr/m/it/10 mar
+ []
+
+
+Overfull \hbox (21.63002pt too wide) in paragraph at lines 42--42
+ \TU/lmr/m/it/10 Garg
+ []
+
+)
+! Emergency stop.
+<*> Acknowledge.tex
+                
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 24 strings out of 494447
+ 100000,89155 words of node,token memory allocated 16069 words of node memory still in use:
+   23 hlist, 2 vlist, 4 disc, 8 local_par, 1 dir, 4 math, 419 glue, 4 kern, 16 p
+enalty, 1769 glyph, 23 attribute, 35 glue_spec, 23 attribute_list, 1 temp nodes
+   avail lists: 2:5,3:1,4:222,5:16,7:116,8:1,9:1,10:221
+ 4271 multiletter control sequences out of 65536+200000
+ 25 fonts using 1344807 bytes
+ 20i,3n,18p,112b,176s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

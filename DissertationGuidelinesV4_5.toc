@@ -1,0 +1,28 @@
+\contentsline {chapter}{Supervisor's Certificate}{ii}
+\contentsline {chapter}{Dedication}{iii}
+\contentsline {chapter}{Declaration of Originality}{iv}
+\contentsline {chapter}{Acknowledgment}{v}
+\contentsline {chapter}{Abstract}{vi}
+\contentsline {chapter}{List of Figures}{ix}
+\contentsline {chapter}{List of Tables}{x}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Thesis Organization}{1}
+\contentsline {chapter}{\numberline {2}Literature Survey}{2}
+\contentsline {section}{\numberline {2.1}Anomaly Detection: A Survey}{2}
+\contentsline {subsection}{\numberline {2.1.1}Aspects of Anomaly Detection}{2}
+\contentsline {subsection}{\numberline {2.1.2}Anomaly Detection Techniques}{3}
+\contentsline {section}{\numberline {2.2}LOF: Identifying Density-Based Local Outliers}{4}
+\contentsline {section}{\numberline {2.3}Incremental Local Outlier Detection for Data Streams}{5}
+\contentsline {subsection}{\numberline {2.3.1}Insertion}{6}
+\contentsline {section}{\numberline {2.4}Memory Efficient Incremental Local Outlier Factor (MiLOF)}{6}
+\contentsline {subsection}{\numberline {2.4.1}Summarization}{7}
+\contentsline {subsection}{\numberline {2.4.2}Merging}{8}
+\contentsline {subsection}{\numberline {2.4.3}Revised Insertion}{9}
+\contentsline {chapter}{\numberline {3}Implementation and Results}{10}
+\contentsline {section}{\numberline {3.1}LOF}{10}
+\contentsline {chapter}{References}{12}
+\contentsline {chapter}{Dissemination}{13}
+\contentsline {paragraph}{Internationally indexed journals}{13}
+\contentsline {paragraph}{Other journals and Book chapters}{13}
+\contentsline {paragraph}{Conferences}{13}
+\contentsline {paragraph}{Article under preparation}{13}
