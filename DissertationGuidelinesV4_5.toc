@@ -5,33 +5,35 @@
 \contentsline {chapter}{List of Figures}{viii}
 \contentsline {chapter}{List of Tables}{ix}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Overview}{1}
+\contentsline {section}{\numberline {1.1}Overview}{2}
 \contentsline {subsection}{\numberline {1.1.1}Aspects of Anomaly Detection}{2}
-\contentsline {subsection}{\numberline {1.1.2}Anomaly Detection Techniques}{3}
-\contentsline {subsection}{\numberline {1.1.3}Applications of Anomaly Detection}{4}
-\contentsline {subsection}{\numberline {1.1.4}Common Causes of Outlier on a Dataset}{5}
-\contentsline {section}{\numberline {1.2}Thesis Organization}{5}
-\contentsline {chapter}{\numberline {2}Literature Survey}{6}
-\contentsline {section}{\numberline {2.1}LOF: Identifying Density-Based Local Outliers}{6}
-\contentsline {section}{\numberline {2.2}Incremental Local Outlier Detection for Data Streams}{7}
-\contentsline {section}{\numberline {2.3}Dolphin}{9}
-\contentsline {subsection}{\numberline {2.3.1}Algorithm}{9}
-\contentsline {subsection}{\numberline {2.3.2}Pivoting Based Search Algorithm}{12}
-\contentsline {section}{\numberline {2.4}Memory Efficient Incremental Local Outlier Factor (MiLOF)}{12}
-\contentsline {subsection}{\numberline {2.4.1}Summarization}{12}
-\contentsline {subsection}{\numberline {2.4.2}Merging}{13}
-\contentsline {subsection}{\numberline {2.4.3}Revised Insertion}{14}
-\contentsline {chapter}{\numberline {3}Memory Efficient Incremental LOF with RKNN}{15}
-\contentsline {section}{\numberline {3.1}Introduction}{15}
-\contentsline {section}{\numberline {3.2}Related Work}{15}
-\contentsline {section}{\numberline {3.3}Proposed Work}{16}
-\contentsline {subsection}{\numberline {3.3.1}ALgorithm}{16}
-\contentsline {chapter}{\numberline {4}Implementation and Results}{18}
-\contentsline {section}{\numberline {4.1}LOF}{18}
-\contentsline {section}{\numberline {4.2}MiLOF and MiLOF with RKNN}{19}
-\contentsline {subsection}{\numberline {4.2.1}Performance measures}{19}
-\contentsline {subsection}{\numberline {4.2.2}Dataset}{20}
-\contentsline {subsection}{\numberline {4.2.3}Results}{20}
-\contentsline {subsubsection}{UCI Letter Dataset}{20}
-\contentsline {subsubsection}{UCI Pendigit Dataset}{21}
-\contentsline {chapter}{\numberline {5}Conclusion}{23}
+\contentsline {subsection}{\numberline {1.1.2}Common Causes of Outlier on a Dataset}{3}
+\contentsline {subsection}{\numberline {1.1.3}Anomaly Detection Techniques}{3}
+\contentsline {subsection}{\numberline {1.1.4}Applications of Anomaly Detection}{4}
+\contentsline {section}{\numberline {1.2}Motivation}{5}
+\contentsline {section}{\numberline {1.3}Contribution of the thesis}{6}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{6}
+\contentsline {chapter}{\numberline {2}Literature Survey}{7}
+\contentsline {section}{\numberline {2.1}LOF: Identifying Density-Based Local Outliers}{7}
+\contentsline {section}{\numberline {2.2}Incremental Local Outlier Detection for Data Streams}{8}
+\contentsline {section}{\numberline {2.3}Dolphin}{10}
+\contentsline {subsection}{\numberline {2.3.1}Algorithm}{10}
+\contentsline {subsection}{\numberline {2.3.2}Pivoting Based Search Algorithm}{13}
+\contentsline {section}{\numberline {2.4}Memory Efficient Incremental Local Outlier Factor (MiLOF)}{13}
+\contentsline {subsection}{\numberline {2.4.1}Summarization}{13}
+\contentsline {subsection}{\numberline {2.4.2}Merging}{14}
+\contentsline {subsection}{\numberline {2.4.3}Revised Insertion}{15}
+\contentsline {chapter}{\numberline {3}Memory Efficient Incremental LOF with RKNN}{16}
+\contentsline {section}{\numberline {3.1}Introduction}{16}
+\contentsline {section}{\numberline {3.2}Related Work}{16}
+\contentsline {section}{\numberline {3.3}Proposed Work}{17}
+\contentsline {subsection}{\numberline {3.3.1}ALgorithm}{17}
+\contentsline {chapter}{\numberline {4}Implementation and Results}{19}
+\contentsline {section}{\numberline {4.1}LOF}{19}
+\contentsline {section}{\numberline {4.2}MiLOF and MiLOF with RKNN}{20}
+\contentsline {subsection}{\numberline {4.2.1}Performance measures}{20}
+\contentsline {subsection}{\numberline {4.2.2}Dataset}{21}
+\contentsline {subsection}{\numberline {4.2.3}Results}{21}
+\contentsline {subsubsection}{UCI Letter Dataset}{21}
+\contentsline {subsubsection}{UCI Pendigit Dataset}{22}
+\contentsline {chapter}{\numberline {5}Conclusion}{24}
