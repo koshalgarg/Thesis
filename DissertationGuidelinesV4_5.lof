@@ -1,6 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Result}}{5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Limitations of Global outlier detection}}{7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 2-D Dataset used for LOF}}{10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces LOF values for synthetic 2-D dataset}}{11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces 2-D Dataset used for LOF}}{18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces LOF values for synthetic 2-D dataset}}{19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when K changes while b is kept constant }}{20}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when b changes while K is constant}}{21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when K changes while b is constant}}{22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when K changes while b is constant}}{22}
+\addvspace {10\p@ }

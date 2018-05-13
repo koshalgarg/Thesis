@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  6 MAY 2018 10:06
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  11 MAY 2018 16:16
  restricted system commands enabled.
 **Abstract.tex
 (./Abstract.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.557 seconds
+luaotfload | main : initialization completed in 3.281 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
 l.2 \SpecialTitle
@@ -56,45 +56,62 @@ l.2 \SpecialTitle{A
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
-("C:/Program Files/MiKTeX 2.9/tex/latex/lm/ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+
 Overfull \hbox (20.0pt too wide) in paragraph at lines 2--4
-[]Abstract
+[]Abstract 
  []
 
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 2--4
-\OT1/lmr/m/n/10 | 
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 O
+   utliers are the data points which behave significantly differently from r...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--11
+[]Outliers
  []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 L
+    ocal Outlier Factor is a score for each of the data points that represen...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
+[]Local
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \noindent
+            \textbf{\textit{Keywords}:~\textit{Outlier};~\textit{Local Outli...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 luaotfload | db : Font names database loaded from C:/Users/me/AppData/Local/MiKT
 eX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/me/App
-Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)(load 
-luc: C:/Users/me/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman
-10-bolditalic.luc)
-Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
-[]Mention
- []
-
-
-Overfull \hbox (23.66002pt too wide) in paragraph at lines 14--15
-\TU/lmr/bx/it/10 bold-
- []
-
-
-Overfull \hbox (30.04001pt too wide) in paragraph at lines 14--15
-\TU/lmr/bx/it/10 italics
- []
-
-(load luc: C:/Users/me/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/l
-mroman10-bold.luc)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 17.
-)
+Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load lu
+c: C:/Users/me/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10
+-bolditalic.luc))
 ! Emergency stop.
 <*> Abstract.tex
              
@@ -103,12 +120,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 Here is how much of LuaTeX's memory you used:
- 65 strings out of 494447
- 100000,89155 words of node,token memory allocated 7092 words of node memory still in use:
-   41 hlist, 1 disc, 9 local_par, 1 dir, 10 math, 205 glue, 4 kern, 29 penalty, 
-658 glyph, 48 attribute, 35 glue_spec, 48 attribute_list, 1 temp nodes
-   avail lists: 2:4,3:2,4:35,5:7,8:3,9:2,10:34
- 4302 multiletter control sequences out of 65536+200000
- 28 fonts using 1690831 bytes
- 22i,1n,14p,316b,127s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 13 strings out of 494447
+ 100000,89155 words of node,token memory allocated 11301 words of node memory still in use:
+   8 hlist, 4 local_par, 1 dir, 262 glue, 6 kern, 10 penalty, 1285 glyph, 17 att
+ribute, 35 glue_spec, 17 attribute_list, 1 temp nodes
+   avail lists: 2:4,4:144,5:2,7:74,8:1,9:1,10:143
+ 4270 multiletter control sequences out of 65536+200000
+ 16 fonts using 854983 bytes
+ 15i,1n,9p,839b,109s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

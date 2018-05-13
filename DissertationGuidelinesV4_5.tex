@@ -11,6 +11,7 @@
 \usepackage{booktabs}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{float}
 %\usepackage{subfigure}
 %\usepackage[ruled,linesnumbered,slide,vlined]{algorithm2e}
 %\usepackage{verbatim}
@@ -37,7 +38,7 @@
 \certificateOneSupervisor		%% Comment any
 %%\certificateTwoSupervisors		%% one of these two
 
-\dedication
+%\dedication
 \declaration
 \acknowledgment
 \abstract
@@ -62,57 +63,57 @@
 \renewcommand{\sectionmark}[1]{\markright{\textbf{Chapter \thechapter}}}
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\input{Chap01/Guidelines}
+\input{Chap01/Introduction}
 \thispagestyle{empty}
 \cleardoublepage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\input{Chap02/Unstructured}
+\input{Chap02/LiteratureSurvey}
 \thispagestyle{empty}
 \cleardoublepage
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
-\input{Chap03/Conclusion}
+\input{Chap03/ProposedWork}
 \thispagestyle{empty}
 \cleardoublepage
-% % % % % % % % % % % % % % % % % % % % % % % % % % %
-% % % % % % % % % % % % % % % % % % % % % % % % % % %
-%%\input{SynopsisText/SynopsisText}
-%%\thispagestyle{empty}
-%%\cleardoublepage
-%%% % % % % % % % % % % % % % % % % % % % % % % % % % %
-%%% % % % % % % % % % % % % % % % % % % % % % % % % % %
-\rhead{\textit{References}}
-\lhead{}
-\renewcommand\bibname{References}
+
+\input{Chap04/Results}
+\thispagestyle{empty}
+\cleardoublepage
+
+
+\input{Chap05/Conclusion}
+\thispagestyle{empty}
+\cleardoublepage
+
+\input{Chap06/References}
+\thispagestyle{empty}
+\cleardoublepage
+
+
+%\rhead{\textit{References}}
+%\lhead{}
+%\renewcommand\bibname{References}
 
 %%%\bibliographystyle{Ref/IEEEtran}
-\bibliographystyle{Ref/asme}
+%\bibliographystyle{Ref/asme}
 %%%\bibliographystyle{Ref/naturemag}
 %%%\bibliographystyle{Ref/bmes}
 %%%\bibliographystyle{Ref/achemso}
 %%%\bibliographystyle{Ref/rsc}
 %%%\bibliographystyle{Ref/osajnl}
 %%
-{
-	\fontsize{10}{12}
-	\selectfont
-	\addcontentsline{toc}{chapter}{References}
-	\bibliography{Ref/SampleReferences}
-	\footnotetext{This reference format follows ASME style. You are advised to follow one reference format of any dominant journal of your field.}
-}
-\cleardoublepage
+%{
+%	\fontsize{10}{12}
+%	\selectfont
+%	\addcontentsline{toc}{chapter}{References}
+%	\bibliography{Ref/SampleReferences}
+%	\footnotetext{This reference format follows ASME style. You are advised to follow one reference format of any dominant journal of your field.}
+
+%\cleardoublepage
 %%% % % % % % % % % % % % % % % % % % % % % % % % % % %
 %%% % % % % % % % % % % % % % % % % % % % % % % % % % %
-\rhead{\textit{Dissemination}}
-\lhead{}
-\input{Ref/SampleDissemination}
-\thispagestyle{empty}
-\cleardoublepage
-% % % % % % % % % % % % % % % % % % % % % % % % % % %
-% % % % % % % % % % % % % % % % % % % % % % % % % % %
-\indexColumns{3}
-\indexPage
+
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \end{document}

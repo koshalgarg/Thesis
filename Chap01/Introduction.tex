@@ -1,0 +1,199 @@
+%Formatting Guidelines for Writing Dissertation.
+\chapter{Introduction}
+
+Outliers are the points which deviate significantly from rest of the data. They do not conform to an expected pattern. The importance of anomaly detection is due to the fact that anomalies in data translate
+to significant, and often critical, actionable information in a wide variety of application
+domains. Sometimes in applications like sensor networks the anomalies has to be found out on fly dynamically. The results are expected instantaneously. Hence Outlier detection techniques have to be computationally fast enough to address huge amount of data generated continuously in data streams. 
+	 However, outlier detection on streaming data is particularly
+challenging, since the volume of data to be analyzed is
+effectively unbounded and cannot be stored indefinitely in
+memory for processing [4]. Data streams are generated at a high data rate and hence the computation speed and efficiency of algorithm has to be high. An outlier detection system in wireless sensor
+networks must work with the limited memory in each
+sensor node in order to detect rare events in near real time. In the
+case of data streams, where the number of data points is
+unbounded and can arrive at a high rate, keeping all data
+points is impossible. Simply deleting some of the points does not help because it may affect the accuracy and detection efficiency of upcoming points. Deleting previous points can cause two problems: i) Deleting the previous data points decreases the detection accuracy of local outlier factor for new data points, ii)We can not differentiate between past events and new events. 
+
+
+Anomaly detection refers to the problem of finding patterns in data that do not conform
+to expected behavior. These nonconforming patterns are often referred to as anomalies,
+outliers, discordant observations, exceptions, aberrations, surprises, peculiarities, or contaminants in different application domains \cite{a}. Anomalies are patterns in data that do not conform to a well defined notion of normal
+behavior.
+
+\section{Overview}
+
+Some of the prerequisites that is essential for the study of anomaly detection are describes in this section. Depending on different domains and problems and data types, approach of anomaly detection varies. 
+\subsection{Aspects of Anomaly Detection}
+
+\begin{enumerate}
+	\item \textit{Nature of Input Data} : Input
+	is generally a collection of data instances. Each data instance contains some attribute values. Attributes can be of different type such as binary, categorical, or continuous.For nearest-neighbor-based techniques, the pairwise distance between instances might be
+	provided in the form of a distance or similarity matrix. In such cases, techniques that
+	require original data instances are not applicable.
+	
+	\item \textit{Type of Anomaly} :  
+	Anomalies are of three types
+	\begin{enumerate}
+		\item \textit{Point Anomalies} : If a single data instance is considerd outlier to rest of the data points then it is called point anomaly. For examle in credit card  fraud detection the data instance the amount spent is very high compared to the normal range of expenditure
+		for that person will be a point anomaly.
+		
+		\item \textit{Contextual Anomalies} : If a data point is considered anomaly in certain context but not otherwise then it  is called contextual or conditional anomaly. For example 1000 dollar expense per week may be considered anomaly in a normal week but not in Christmas week.
+		
+		\item \textit{Collective Anomalies} : If a collection of related data points are anomalous with respect to entire data set then they are termed as collective anomalies. Individually these data points may not be anomalous but taking together they are outliers. 
+	\end{enumerate}
+	
+	
+	
+	\item \textit{Data Labels}
+	Data labels for each instance shows whether it is a normal point or anomalous. Labeling is often done manually by a human expert which is clearly very expensive and time taking. Getting a training data set that contains the representative of all possible outliers is very difficult. Based on the extend of availability of labeled data, anomaly detection technique can operate in three modes
+	
+	\begin{enumerate}
+		
+		\item \textit{Supervised Anomaly Detection} : Training data set that has labeled instances for both normal and anomalous class. Any new data instances is classified in one among these two classes. Major problem with this approach is to get labeled data and anomalous instances are very few as compared to normal instances. This imbalanced class distribution reduces the accuracy. 
+		
+		\item \textit{Semisupervised Anomaly Detection.} : Training data set has labeled instances for either normal or anomalous class only. It is very difficult to put representative instances for all possible outliers that can occur in the data.
+		
+		\item \textit{Unsupervised Anomaly Detection} : In unsupervised anomaly detection there is no training data. This works with the assumption that normal instances are far more than anomalies in test data.   
+	\end{enumerate}
+	
+	
+	\item \textit{Output of Anomaly Detection}
+	
+	\begin{enumerate}
+		\item \textit{Scores} : Score is assigned to each instance depending on the degree to which that instance is considered anomaly. Selecting the cutoff for anomaly is decided based on the number of top anomalous points.
+		
+		\item \textit{Label} : Binary label is assigned to each instance whether it is normal or anomalous.
+	\end{enumerate} 
+	
+	
+\end{enumerate}
+
+
+
+
+\subsection{Anomaly Detection Techniques} 
+
+\begin{enumerate}
+	\item \textit {Nearest Neighbor Based } : Nearest neighbor based anomaly detection techniques works on the assumption that normal data points occur in dense clusters and oultliers lie far from their neighbors. It requires a distance or similarity
+	measure defined between two data instances. Nearest neighbor based technique is broadly classified in two types
+	
+	\begin{enumerate}
+		\item 
+		\textit{Using Distance to $K^{th}$  Nearest Neighbor}
+		The anomaly score of an instance is the distance between the point and it's $K^{th}$ nearest neighbor. A different approach to compute anomaly score is to count no of instances in a radius of d. 
+		
+		\item 
+		\textit{Using Relative Density} : An instance that lies in a neighborhood of less density is considered outlier while an instance that lies in a dense neighborhood is considered normal. But this technique fails for dataset with varying densities. To address this problem the density of instances relative to their neighborhood is computed.
+		
+		\par To assign a relative density score, Local Outlier Factor was proposed. For any given data instance, the LOF score is equal to
+		ratio of average local density of the k nearest neighbors of the instance and the local
+		density of the data instance itself \cite{b}.
+		
+	\end{enumerate}
+	
+	
+	
+	\item \textit{Clustering Based Anomaly Detection Techniques} : 
+	
+	Clustering is grouping similar data points into clusters. Clustering is unsupervised. These techniques work on the assumption that
+	\begin{itemize}
+		\item Normal points lie inside clusters and anomalous points does not belong to any cluster.
+		
+		\item Normal points lie closer to the cluster center while outliers lie far away from the cluster centers.
+		
+		\item Normal data points belongs to large and dense clusters while outliers belong to small and parse clusters.
+	\end{itemize} 
+	
+	
+	
+\end{enumerate}
+
+\subsection{Applications of Anomaly Detection}
+
+
+\begin{enumerate}
+	
+\item \textbf{Intrusion Detection}\
+Intrusion detection refers to detection of malicious activity in a computer related system. An intrusion is different from normal behavior of computer and hence anomaly detection techniques are applicable for intrusion detection domain. The main challenges for this domain are huge amount of data and streaming data. Anomaly detection has to be performed online. Moreover due to huge data, there is possibility of false alarm. Hence for this domain supervised anomaly detection techniques are preferable because they can have labeled data for normal behavior. 
+	 
+
+\item \textbf{Fraud Detection}\
+
+Fraud detection refers to detection of criminal activities occurring in commercial organizations
+such as banks, credit card companies, insurance agencies, cell phone companies,
+stock market, and so on. If the user is not actual customer of the organization then it is called identity theft. It is considered fraud when user tries to access resources of the organization without any authorization. It is necessary to recognize these fraud activities immediately to prevent economic losses.
+
+
+\item \textbf{Medical and Public Health Anomaly Detection}\
+
+In this domain anomalies are to be found in patient records. Anomalies may occur due to various reasons such as abnormal
+patient condition, instrumentation errors, or recording errors. Patient data consists of several different types of features,
+such as patient age, blood group, and weight. Most of the current anomaly detection techniques in this
+domain aim at detecting anomalous records, point anomalies. Typically the labeled
+data belongs to the healthy patients, hence most of the techniques adopt a semi supervised
+approach. 
+
+
+\item \textbf{Industrial Damage Detection}\
+
+The data in this domain are mostly sensor data. Industrial damage detection
+can be classified into two domains, one that deals with defects in mechanical
+components such as motors, engines, and so on, and the other that deals with defects
+in physical structures. The former domain is also referred to as system health
+management.
+
+
+\item \textbf{Traffic Anomaly Detection}\
+
+In this  domain 
+anomalous behavior of vehicles due to the traffic congestion are detected. Based on the regular trajectories of the taxi cabs, if the trajectory on a certain differs then it is considered as outlier. This change in behavior is due to the heavy traffic in the regular trajectory. Detection of such anomalies can save a lot of time and fuel.   
+
+\end{enumerate}
+
+
+\subsection{Common Causes of Outlier on a Dataset}
+
+
+
+
+
+\begin{itemize}
+	\item Data entry errors - Human errors
+	\item Measurment errors - Instrument errors
+	\item Experimental errors
+	\item Data processing errors (data manipulation or data set unintended mutations)
+	\item Sampling errors (extracting or mixing data from wrong or various sources)
+	
+	\item Natural :  Those that are not a product of an error are called novelties.
+	
+\end{itemize} 
+
+ 
+	
+	
+
+
+
+
+\section{Thesis Organization}
+
+The thesis is organized as follows.
+\textbf{Chapter 2 :} This chapter includes the summary of different approaches which are proposed for anomaly detection.
+
+\textbf{Chapter 3 :} This chapter describes the contribution of the thesis. In this chapter our proposed work is explained in detail. 
+
+
+\textbf{Chapter 4 :} In this chapter we have shown the results for different approaches and compared their results.
+
+
+\textbf{Chapter 5 :} This chapter summarizes overall contributions and discusses a future research
+directions of the thesis.
+
+ 
+
+
+	
+
+
+
+

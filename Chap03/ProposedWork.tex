@@ -1,0 +1,93 @@
+\chapter{Memory Efficient Incremental LOF with RKNN}\label{Memory Efficient Incremental LOF with RKNN}
+
+\section{Introduction}
+
+Outliers are the data points which behave significantly differently from rest of the points. These points can be any noisy point or signify an anomalous behavior. Detecting these outlier points can help in variety of applications, such as fraud detection for credit cards, insurance, or health care, intrusion detection
+for cyber security, fault detection in safety critical systems, and military surveillance
+for enemy activities. However, outlier detection on streaming data is particularly
+challenging, since the volume of data to be analyzed is
+effectively unbounded and cannot be stored indefinitely in
+memory for processing.
+
+\section{Related Work}
+
+Local Outlier Factor is a score for each of the data points that represents the degree of anomalous behavior for that point. For the point deep inside a cluster it is nearly equal to 1. We first compute the K-distances by finding K nearest neighbors of the points. After computing K-siatances, lrd and LOF value is computed.
+
+\par
+Having all the data prior computation is not possible. In data streams data arrives continuously and we have to find the outlier points. So an incremental LOF technique is used. In incremental LOF(iLOF), LOF is computed for each of the data points from the data stream. But the assumption there is that memory available is infinity. 
+
+\par
+
+Storing all the data points in data stream is impractical because that need a huge memory space. Moreover the time complexity to measure LOF will be increasing if the size is increasing. SO to implement incremental LOF with limited memory , Memory efficient Incremental LOF (MiLOF) was developed. 
+
+
+\par If total available memory is just sufficient to store K-distance, lrd and LOF of m data points then this memory is divided into two parts of size 'b' and 'c' to store b original data points and c summarized cluster centers respectively. For every new incoming data point LOF in computed following iLOF using the information of b original data points and c cluster centers. If memory limit is reached, first half of the data points are removed from the memory. They are summarized into 'c' clusters and then merged with the previous cluster centers using weighted K-means algorithm. Weight here for a cluster center is number of data points in that cluster. This way incremental LOF computation in data stream is done in memory efficient way.
+
+
+
+
+
+
+ \section{Proposed Work}
+ In MiLOF what we are doing is that we are selecting the points which came first. But this selection of points can cost us accuracy for computation of LOF  upcoming points. Hence selection of points which are to be summarized is very crucial. In MiLOF whenever the number of data points in memory reaches b, half of the points are selected to be summarized and deleted. But on what basis we should select these points to increase accuracy. In MiLOF, they choose the first $\frac{b}{2}$ points on their arrival time basis. There must be some other parameter that can help to decide which points to be deleted.
+
+To deal with this problem, we propose MiLOF with reverse K nearest neighbor(RKNN) that precisely tells us which points are to be removed. Along with K-distance, lrd, LOF of all the points, we store no of reverse KNN for each of these points. 
+
+\par 
+
+\textit{Reverse K Nearest Neighbors RKNN(p) } : It i sthe no of data points which include p in their respective K nearest neighbours.
+
+\subsection{ALgorithm}
+Having stored RKNN for all the b data points, we sort these b points according to RKNN and select $\frac{b}{2}$ data points with highest RKNN. These points are definitely normal points because they have enough neighbors. Hence by removing these points we are keeping candidate outliers for further computation. It can be seen from the results in next section that this reduces false alarm significantly.
+
+Algorithm for MiLOF with RKNN is shown in 
+
+\begin{algorithm}[h!]
+	\caption{MiLOF with RKNN}
+	\begin{algorithmic}
+		\STATE  
+		\STATE INPUT:  A data point p 
+		\STATE OUTPUT: LOF value LOF(p)
+		\STATE
+		
+		\STATE Compute LOF of p and update RKNN for all the data points 
+		\IF {No of points=b}
+		
+		\STATE Sort these b data points according to their RKNN count in decreasing order
+		
+		\STATE $C^i$ $\leftarrow$ First $\frac{b}{2}$ points
+		\STATE ($V^i$,$N^i$) $\leftarrow$ C-means($C^i$)
+		
+		\FOR {all $v^i$ \in $V^i$} 
+		\STATE Compute avereage K-distance, lrd and LOF
+		\ENDFOR
+		
+		\STATE Delete $C^i$
+		
+		\IF{i>0}
+		\STATE (Z;W) $\leftarrow$ Weighted c-means($V^i$ U $V^{i-1}$ ,$N^i$ U $N^{i-1}$)
+		
+		\FOR {all z \in Z} 
+		\STATE Compute avereage K-distance, lrd and LOF
+		\ENDFOR 
+		\STATE $V^{i-1}$ \leftarrow Z
+		\STATE Delete $V^{i-1}$,Z
+		
+		\ENDIF	
+		\ENDIF
+		
+		\STATE i $\leftarrow$ i+1
+		\RETURN LOF
+	\end{algorithmic}
+\end{algorithm}
+
+
+
+
+
+
+
+
+
+
+

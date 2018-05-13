@@ -1,0 +1,15 @@
+\chapter{Conclusion}\label{Conclusion}
+
+Anomaly detection has many applications in various sectors. However anomaly detection in
+streaming data is preferred over static data because its not possible to have and store all the data
+in memory. Continuous generation of data and the need to identify the nature of point as fast as
+possible motivated us to research on this topic.
+Selection of points which are to be summarized and deleted is very crucial because that determines
+the accuracy of LOF detection. In MiLOF they select the points which come early in the data stream
+assuming that new points are more crucial for anomaly detection. Since there is no selection criteria
+for these points many crucial points are summarized and deleted. What we have suggested in MiLOF
+with RKNN is that we store number of reverse K nearest neighbors(RKNN) of all the points and
+when memory limit is reached we select the points with high RKNN value. High RKNN value here
+means the point is surrounded by sufficient number of points which ensures the point to be normal.
+By doing so we are keeping the candidate outliers for further computations. From the results plots
+it is quite evident that MiLOF with RKNN provides better results then normal MiLOF.

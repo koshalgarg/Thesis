@@ -1,17 +1,25 @@
 \thispagestyle{empty} 
 \SpecialTitle{Abstract}
-\noindent Write the abstract of the dissertation followed by 3 to 7 keywords or phrases. An abstract is a micro dissertation. Both the dissertation and abstract should answer the following few questions \textemdash
-\begin{itemize}
-\item What was done?
-\item Why was it done?
-\item How was it done?
-\item What was found?
-\item What is the significance of the findings?
-\end{itemize}
-In the abstract section, one should answer the above questions in short paragraphs. The total length of the abstract should typically be limited to two pages.
+\noindent 
+
+Outliers are the data points which behave significantly differently from rest of the points. These points can be any noisy point or signify an anomalous behavior. Detecting these outlier points can help in variety of applications, such as fraud detection for credit cards, insurance, or health care, intrusion detection
+for cyber security, fault detection in safety critical systems, and military surveillance
+for enemy activities. However, outlier detection on streaming data is particularly
+challenging, since the volume of data to be analyzed is
+effectively unbounded and cannot be stored indefinitely in
+memory for processing. 
+
+Local Outlier Factor is a score for each of the data points that represents the degree of anomalous behavior for that point. For the point deep inside a cluster it is nearly equal to 1. In incremental LOF, LOF is computed for each of the data points from the data stream. But the assumption there is that memory available is infinity. We have all the previous data points stored. But it is impractical to store all the data points. Hence a memory efficient technique has to be developed. Memory incremental LOF does the work. If available memory can store only m data points with their details, this memory is divided into two parts to store original data points and summarized data points.  When memory limit is reached half of these data points are summarized to 'c' clusters and deleted to free memory for upcoming points.
+
+ 
+
+\par
+
+\par 
+In MiLOF what they did is that they delete the points which came earlier. These points which are deleted may be crucial for further computations. So there must be some criteria to select the points which are more likely to be an outlier and should be kept. The points which are proved to be normal can be summarized and deleted. To address this problem we propose to memory incremental Local Outlier Factor with Reverse K Nearest Neighbor(MiLOF with RKNN) which provides a criteria to select the points which are to be deleted. We have used two datasets to compare the results in two approaches and MiLOF with RKNN gives better result than MiLOF.
+
+  
+
 
 \vspace{5mm}
-Mention 3 to 7 keywords, phrases, or index terms in \textit{\textbf{bold-italics}} separated by semicolons. These words should be carefully chosen in a manner that they convey sufficient information on what the dissertation is all about. These words help other researchers to search and find your work.
-
-\vspace{5mm}
-\noindent\textbf{\textit{Keywords}:~\textit{KW$_1$};~\textit{KW$_2$};~\textit{KW$_3$};~\textit{KW$_4$};~\textit{KW$_5$}.}
+\noindent\textbf{\textit{Keywords}:~\textit{Outlier};~\textit{Local Outlier Factor};~\textit{Data stream};~\textit{K-distance};~\textit{K nearest neighbor(KNN)};~\textit{Reverse K nearest neighbor(RKNN)}.;~\textit{Memory efficient incremental LOF(MiLOF)}}
