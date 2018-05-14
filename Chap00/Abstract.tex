@@ -9,14 +9,14 @@ challenging, since the volume of data to be analyzed is
 effectively unbounded and cannot be stored indefinitely in
 memory for processing. 
 
-Local Outlier Factor is a score for each of the data points that represents the degree of anomalous behavior for that point. For the point deep inside a cluster it is nearly equal to 1. In incremental LOF, LOF is computed for each of the data points from the data stream. But the assumption there is that memory available is infinity. We have all the previous data points stored. But it is impractical to store all the data points. Hence a memory efficient technique has to be developed. Memory incremental LOF does the work. If available memory can store only m data points with their details, this memory is divided into two parts to store original data points and summarized data points.  When memory limit is reached half of these data points are summarized to 'c' clusters and deleted to free memory for upcoming points.
+Local Outlier Factor is a score for each of the data points that represents the degree of anomalous behavior for that point. For the point deep inside a cluster it is nearly equal to 1. In incremental LOF, LOF is computed for each of the data points from the data stream. But the assumption there is that memory available is infinity. We have all the previous data points stored. But it is impractical to store all the data points. Hence a memory efficient technique has to be developed like Memory efficient incremental LOF. If available memory can store only $m$ data points with their details, this memory is divided into two parts to store original data points and summarized data points.  When memory limit is reached half of these data points are summarized to $c$ clusters and deleted to free memory for upcoming points.
 
  
 
 \par
 
 \par 
-In MiLOF what they did is that they delete the points which came earlier. These points which are deleted may be crucial for further computations. So there must be some criteria to select the points which are more likely to be an outlier and should be kept. The points which are proved to be normal can be summarized and deleted. To address this problem we propose to memory incremental Local Outlier Factor with Reverse K Nearest Neighbor(MiLOF with RKNN) which provides a criteria to select the points which are to be deleted. We have used two datasets to compare the results in two approaches and MiLOF with RKNN gives better result than MiLOF.
+In MiLOF we delete the points which came earlier. These points which are deleted may be crucial for further computations. So there must be some criteria to select the points which are more likely to be an outlier and should be kept. The points which are proved to be normal can be summarized and deleted. To address this problem we propose Memory efficient Incremental Local Outlier Factor with Reverse $K$ Nearest Neighbor(MiLOF with RKNN) which provides a criteria to select the points which are to be deleted. We have used two datasets to compare the results in two approaches and MiLOF with RKNN gives better result than MiLOF.
 
   
 

@@ -1,6 +1,26 @@
 %%%%%%%%%%%% References %%%%%%%%%%%%%%%%%%%%%%%
 BibTeX | EndNote | ACM Ref
-@article{Chandola:2009:ADS:1541880.1541882,
+
+@book{hawkins,
+	added-at = {2009-08-21T09:49:34.000+0200},
+	address = {London},
+	author = {Hawkins, {D. M.}},
+	biburl = {https://www.bibsonomy.org/bibtex/2a18a993511eae14be1e4afcb6781ea58/fbw_hannover},
+	interhash = {354e966642b8cb841f0b279a019a5aa9},
+	intrahash = {a18a993511eae14be1e4afcb6781ea58},
+	isbn = {041221900X},
+	keywords = {imported},
+	pagetotal = {X, 188},
+	ppn_gvk = {02435757X},
+	publisher = {Chapman and Hall},
+	title = {Identification of outliers},
+	url = {http://gso.gbv.de/DB=2.1/CMD?ACT=SRCHA&SRT=YOP&IKT=1016&TRM=ppn+02435757X&sourceid=fbw_bibsonomy},
+	year = 1980
+}
+
+
+
+@article{a,
  author = {Chandola, Varun and Banerjee, Arindam and Kumar, Vipin},
  title = {Anomaly Detection: A Survey},
  journal = {ACM Comput. Surv.},
@@ -22,7 +42,7 @@ BibTeX | EndNote | ACM Ref
 }
 
 
-@article{Breunig:2000:LID:335191.335388,
+@article{b,
  author = {Breunig, Markus M. and Kriegel, Hans-Peter and Ng, Raymond T. and Sander, J\"{o}rg},
  title = {LOF: Identifying Density-based Local Outliers},
  journal = {SIGMOD Rec.},
@@ -41,6 +61,161 @@ BibTeX | EndNote | ACM Ref
  address = {New York, NY, USA},
  keywords = {database mining, outlier detection},
 } 
+
+
+@INPROCEEDINGS{c,
+	author = {Dragoljub Pokrajac},
+	title = {Incremental local outlier detection for data streams},
+	booktitle = {Proceedings of IEEE Symposium on Computational Intelligence and Data Mining},
+	year = {2007},
+	pages = {504--515}
+}
+
+@article{d,
+	title = "Fast memory efficient local outlier detection in data streams",
+	abstract = "Outlier detection is an important task in data mining, with applications ranging from intrusion detection to human gait analysis. With the growing need to analyze high speed data streams, the task of outlier detection becomes even more challenging as traditional outlier detection techniques can no longer assume that all the data can be stored for processing. While the well-known Local Outlier Factor (LOF) algorithm has an incremental version, it assumes unbounded memory to keep all previous data points. In this paper, we propose a memory efficient incremental local outlier (MiLOF) detection algorithm for data streams, and a more flexible version (MiLOF-F), both have an accuracy close to Incremental LOF but within a fixed memory bound. Our experimental results show that both proposed approaches have better memory and time complexity than Incremental LOF while having comparable accuracy. In addition, we show that MiLOF-F is robust to changes in the number of data points, the number of underlying clusters and the number of dimensions in the data stream. These results show that MiLOF/MiLOF-F are well suited to application environments with limited memory (e.g., wireless sensor networks), and can be applied to high volume data streams.",
+	keywords = "Local outlier, Memory efficiency, Outlier detection, Stream data mining",
+	author = "Mahsa Salehi and Christopher Leckie and Bezdek, {James C.} and Tharshan Vaithianathan and Xuyun Zhang",
+	year = "2016",
+	month = "12",
+	doi = "10.1109/TKDE.2016.2597833",
+	volume = "28",
+	pages = "3246--3260",
+	journal = "IEEE Transactions on Knowledge and Data Engineering",
+	issn = "1041-4347",
+	publisher = "IEEE, Institute of Electrical and Electronics Engineers",
+	number = "12",
+}
+
+
+@article{e,
+	author = {Angiulli, Fabrizio and Fassetti, Fabio},
+	title = {DOLPHIN: An Efficient Algorithm for Mining Distance-based Outliers in Very Large Datasets},
+	journal = {ACM Trans. Knowl. Discov. Data},
+	issue_date = {March 2009},
+	volume = {3},
+	number = {1},
+	month = mar,
+	year = {2009},
+	issn = {1556-4681},
+	pages = {4:1--4:57},
+	articleno = {4},
+	numpages = {57},
+	url = {http://doi.acm.org/10.1145/1497577.1497581},
+	doi = {10.1145/1497577.1497581},
+	acmid = {1497581},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Data mining, distance-based outliers, outlier detection},
+} 
+
+@Article{f,
+	author="Tang, Jian
+	and Chen, Zhixiang
+	and Fu, Ada Waichee
+	and Cheung, David W.",
+	title="Capabilities of outlier detection schemes in large datasets, framework and methodologies",
+	journal="Knowledge and Information Systems",
+	year="2007",
+	month="Jan",
+	day="01",
+	volume="11",
+	number="1",
+	pages="45--84",
+	abstract="Outlier detection is concerned with discovering exceptional behaviors of objects. Its theoretical principle and practical implementation lay a foundation for some important applications such as credit card fraud detection, discovering criminal behaviors in e-commerce, discovering computer intrusion, etc. In this paper, we first present a unified model for several existing outlier detection schemes, and propose a compatibility theory, which establishes a framework for describing the capabilities for various outlier formulation schemes in terms of matching users'intuitions. Under this framework, we show that the density-based scheme is more powerful than the distance-based scheme when a dataset contains patterns with diverse characteristics. The density-based scheme, however, is less effective when the patterns are of comparable densities with the outliers. We then introduce a connectivity-based scheme that improves the effectiveness of the density-based scheme when a pattern itself is of similar density as an outlier. We compare density-based and connectivity-based schemes in terms of their strengths and weaknesses, and demonstrate applications with different features where each of them is more effective than the other. Finally, connectivity-based and density-based schemes are comparatively evaluated on both real-life and synthetic datasets in terms of recall, precision, rank power and implementation-free metrics.",
+	issn="0219-3116",
+	doi="10.1007/s10115-005-0233-6",
+	url="https://doi.org/10.1007/s10115-005-0233-6"
+}
+
+
+@INPROCEEDINGS{ca1, 
+	author={C. Warrender and S. Forrest and B. Pearlmutter}, 
+	booktitle={Proceedings of the 1999 IEEE Symposium on Security and Privacy (Cat. No.99CB36344)}, 
+	title={Detecting intrusions using system calls: alternative data models}, 
+	year={1999}, 
+	volume={}, 
+	number={}, 
+	pages={133-145}, 
+	keywords={authorisation;hidden Markov models;knowledge based systems;operating system kernels;safety systems;HMMs;alternative data models;data modeling methods;hidden Markov models;illegitimate activities;intrusion detection systems;legitimate activities;normal behavior;observable data;observed sequences;operating system kernel;relative frequencies;rule induction technique;simple enumeration;system calls;system-call data sets;Computer science;Data models;Distributed computing;Hidden Markov models;Intrusion detection;Monitoring;Packaging;Proposals;Reactive power;Security}, 
+	doi={10.1109/SECPRI.1999.766910}, 
+	ISSN={1081-6011}, 
+	month={},}
+
+
+@inproceedings{ca2,
+	author = {Noble, Caleb C. and Cook, Diane J.},
+	title = {Graph-based Anomaly Detection},
+	booktitle = {Proceedings of the Ninth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+	series = {KDD '03},
+	year = {2003},
+	isbn = {1-58113-737-0},
+	location = {Washington, D.C.},
+	pages = {631--636},
+	numpages = {6},
+	url = {http://doi.acm.org/10.1145/956750.956831},
+	doi = {10.1145/956750.956831},
+	acmid = {956831},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {anomaly detection, data mining, graph regularity},
+} 
+
+@inproceedings{ca3,
+	author = {Shekhar, Shashi and Lu, Chang-Tien and Zhang, Pusheng},
+	title = {Detecting Graph-based Spatial Outliers: Algorithms and Applications (a Summary of Results)},
+	booktitle = {Proceedings of the Seventh ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+	series = {KDD '01},
+	year = {2001},
+	isbn = {1-58113-391-X},
+	location = {San Francisco, California},
+	pages = {371--376},
+	numpages = {6},
+	url = {http://doi.acm.org/10.1145/502512.502567},
+	doi = {10.1145/502512.502567},
+	acmid = {502567},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {Outlier Detection, Spatial Data Mining, Spatial Graphs},
+} 
+
+
+@Article{contextual, 
+	author={X. Song and M. Wu and C. Jermaine and S. Ranka}, 
+	journal={IEEE Transactions on Knowledge and Data Engineering}, 
+	title={Conditional Anomaly Detection}, 
+	year={2007}, 
+	volume={19}, 
+	number={5}, 
+	pages={631-645}, 
+	keywords={data analysis;data mining;expectation-maximisation algorithm;security of data;conditional anomaly detection;data analysis tool;expectation-maximization algorithm;Application software;Biomedical informatics;Computer security;Computer vision;Costs;Data analysis;Data mining;Expectation-maximization algorithms;Humans;Software tools;Data mining;mining methods and algorithms.}, 
+	doi={10.1109/TKDE.2007.1009}, 
+	ISSN={1041-4347}, 
+	month={May},}
+
+@INPROCEEDINGS{fraud,
+	author = {Richard J. Bolton and David J. Hand and David J. H},
+	title = {Unsupervised Profiling Methods for Fraud Detection},
+	booktitle = {Proc. Credit Scoring and Credit Control VII},
+	year = {2001},
+	pages = {5--7}
+}
+
+@inproceedings{medical,
+	author = {Lin, Jessica and Keogh, Eamonn and Fu, Ada and Van Herle, Helga},
+	title = {Approximations to Magic: Finding Unusual Medical Time Series},
+	booktitle = {Proceedings of the 18th IEEE Symposium on Computer-Based Medical Systems},
+	series = {CBMS '05},
+	year = {2005},
+	isbn = {0-7695-2355-2},
+	pages = {329--334},
+	numpages = {6},
+	url = {http://dx.doi.org/10.1109/CBMS.2005.34},
+	doi = {10.1109/CBMS.2005.34},
+	acmid = {1078134},
+	publisher = {IEEE Computer Society},
+	address = {Washington, DC, USA},
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%% The End %%%%%%%%%%%%%%%%%%%%

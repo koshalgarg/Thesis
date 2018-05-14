@@ -1,5 +1,4 @@
-\chapter{Conclusion}\label{Conclusion}
-
+\chapter{Conclusion and Future Scope}\label{Conclusion and Future Scope}
 Anomaly detection has many applications in various sectors. However anomaly detection in
 streaming data is preferred over static data because its not possible to have and store all the data
 in memory. Continuous generation of data and the need to identify the nature of point as fast as
@@ -13,3 +12,19 @@ when memory limit is reached we select the points with high RKNN value. High RKN
 means the point is surrounded by sufficient number of points which ensures the point to be normal.
 By doing so we are keeping the candidate outliers for further computations. From the results plots
 it is quite evident that MiLOF with RKNN provides better results then normal MiLOF.
+
+\section{Future Scope}
+
+The outlier detection technique for streaming data discussed in Chapter 3 can be explored further and better summarization techniques other than $c$-means clustering can be used. Deletion of data points with high RKNN values increases the accuracy and hence can be used in many domains like
+
+
+	\begin{itemize}
+		
+		\item Fraud detection for credit cards
+		\item Intrusion detection
+		\item Traffic anomaly detection 
+		\item Medical and public health anomaly detection
+		\item Sensor networks
+	\end{itemize}
+
+

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  11 MAY 2018 13:46
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  14 MAY 2018 07:27
  restricted system commands enabled.
 **Acknowledge.tex
 (./Acknowledge.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 2.109 seconds
+luaotfload | main : initialization completed in 0.575 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
 l.2 \SpecialTitle
@@ -68,30 +68,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 F
-   irst of all I would like to express my deepest respect and gratitude towa...
+l.6 I
+    consider it as my privilege to express gratitude and respect to all thos...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 5--14
-[]First
- []
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 I
-     would also like to thank the PhD researchers and my fellow Masters stud...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 17--28
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--9
 []I
  []
 
@@ -102,14 +85,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 i
-    n working in this field and continue on their path to make the world a b...
+l.11 F
+    irst and foremost, I would like to express my gratitude to my supervisor...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 29--33
-[]in
+Overfull \hbox (20.0pt too wide) in paragraph at lines 11--17
+[]First
  []
 
 
@@ -119,35 +102,82 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \begin{minipage}{.45\linewidth}
+l.20 I
+     would also like to keep in the record the moral and emotional support p...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--22
+[]I
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \begin{minipage}{.45\linewidth}
                                   
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 40.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 40.
+(Font)              <5> on input line 29.
 luaotfload | db : Font names database loaded from C:/Users/me/AppData/Local/MiKT
 eX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/me/App
 Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
-Overfull \hbox (29.16pt too wide) in paragraph at lines 43--43
- \TU/lmr/m/it/10 Koshal
+Overfull \hbox (19.45pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 Avul
  []
 
 
-Overfull \hbox (16.13pt too wide) in paragraph at lines 43--43
- \TU/lmr/m/it/10 Ku-
+Overfull \hbox (23.78001pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 Pakir
  []
 
 
-Overfull \hbox (17.51pt too wide) in paragraph at lines 43--43
- \TU/lmr/m/it/10 mar
+Overfull \hbox (22.63pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 Jain-
  []
 
 
-Overfull \hbox (21.63002pt too wide) in paragraph at lines 43--43
- \TU/lmr/m/it/10 Garg
+Overfull \hbox (8.95pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 u-
+ []
+
+
+Overfull \hbox (11.25pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 la-
+ []
+
+
+Overfull \hbox (8.18001pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 b-
+ []
+
+
+Overfull \hbox (19.42001pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 deen
+ []
+
+
+Overfull \hbox (15.1pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 Ab-
+ []
+
+
+Overfull \hbox (13.04pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 dul
+ []
+
+
+Overfull \hbox (28.58pt too wide) in paragraph at lines 32--32
+ \TU/lmr/m/it/10 Kalam
  []
 
 )
@@ -160,11 +190,11 @@ Overfull \hbox (21.63002pt too wide) in paragraph at lines 43--43
 
 Here is how much of LuaTeX's memory you used:
  24 strings out of 494447
- 100000,89155 words of node,token memory allocated 16096 words of node memory still in use:
-   27 hlist, 2 vlist, 4 disc, 9 local_par, 1 dir, 4 math, 424 glue, 4 kern, 20 p
-enalty, 1759 glyph, 25 attribute, 35 glue_spec, 25 attribute_list, 1 temp nodes
-   avail lists: 2:5,3:1,4:156,5:16,8:1,9:1,10:155
+ 100000,89155 words of node,token memory allocated 7969 words of node memory still in use:
+   32 hlist, 2 vlist, 5 disc, 9 local_par, 1 dir, 4 math, 225 glue, 5 kern, 22 p
+enalty, 788 glyph, 24 attribute, 35 glue_spec, 24 attribute_list, 1 temp nodes
+   avail lists: 2:5,3:1,4:74,5:18,8:1,9:1,10:73
  4271 multiletter control sequences out of 65536+200000
  25 fonts using 1344807 bytes
- 20i,3n,18p,112b,177s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,3n,18p,103b,176s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

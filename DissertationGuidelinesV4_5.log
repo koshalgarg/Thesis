@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  13 MAY 2018 08:12
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  14 MAY 2018 14:46
  restricted system commands enabled.
 **DissertationGuidelinesV4_5.tex
 (./DissertationGuidelinesV4_5.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.622 seconds
+luaotfload | main : initialization completed in 0.585 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./NITR.cls
 Document Class: NITR 2016/10/07 v4.5 NIT Rourkela Dissertation LaTeX document cl
@@ -1542,11 +1542,11 @@ d-ing pat-terns in data that do not
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not avail
 able
 (Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input
- line 66.
+ line 65.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/bx/sl' in size <12> not avai
 lable
 (Font)              Font shape `TU/TimesNewRoman(0)/bx/it' tried instead on inpu
-t line 66.
+t line 65.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1556,108 +1556,117 @@ Package Fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [2] [3] [4] [5]) [6] (./Chap02/LiteratureSurvey.tex
 Chapter 2.
-<chap01/localvsglobal.png, id=66, 308.65312pt x 241.65282pt>
-File: chap01/localvsglobal.png Graphic file (type png)
-<use chap01/localvsglobal.png>
-Package luatex.def Info: chap01/localvsglobal.png  used on input line 48.
-(luatex.def)             Requested size: 308.65236pt x 241.65222pt.
 [7
 
 
-] [8<./chap01/localvsglobal.png>](load luc: C:/Users/me/AppData/Local/MiKTeX/2.9
-/luatex-cache/generic/fonts/otl/lmmono12-regular.luc) [9]
-Underfull \hbox (badness 1132) in paragraph at lines 146--148
-\TU/TimesNewRoman(0)/m/n/12 DOL-PHIN gains ef-fi-ciency by nat-u-rally merg-ing
- to-gether in a uni-fied schema three
- []
-
-[10] [11] [12] [13] [14]) [15] (./Chap03/ProposedWork.tex
+]
+<chap01/localvsglobal2.png, id=76, 304.88907pt x 182.18062pt>
+File: chap01/localvsglobal2.png Graphic file (type png)
+<use chap01/localvsglobal2.png>
+Package luatex.def Info: chap01/localvsglobal2.png  used on input line 57.
+(luatex.def)             Requested size: 304.88832pt x 182.18016pt.
+ [8<./chap01/localvsglobal2.png>](load luc: C:/Users/me/AppData/Local/MiKTeX/2.9
+/luatex-cache/generic/fonts/otl/lmmono12-regular.luc) [9] [10] [11]
+[12] [13] [14]) [15] (./Chap03/ProposedWork.tex
 Chapter 3.
 [16
 
 
 ]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [17] [18] (./Chap04/Results.tex
-Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--27
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-<chap04/LOF_dataset.png, id=112, 224.33812pt x 152.06813pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+<chap04/partition.png, id=107, 380.42125pt x 141.52875pt>
+File: chap04/partition.png Graphic file (type png)
+<use chap04/partition.png>
+Package luatex.def Info: chap04/partition.png  used on input line 43.
+(luatex.def)             Requested size: 380.4203pt x 141.5284pt.
+[17<./chap04/partition.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--117
+
+ []
+
+[18]
+<chap04/LOF_dataset.png, id=115, 298.86656pt x 228.855pt>
 File: chap04/LOF_dataset.png Graphic file (type png)
 <use chap04/LOF_dataset.png>
-Package luatex.def Info: chap04/LOF_dataset.png  used on input line 31.
-(luatex.def)             Requested size: 224.33757pt x 152.06775pt.
-<chap04/LOF_result.png, id=113, 240.9pt x 149.8097pt>
+Package luatex.def Info: chap04/LOF_dataset.png  used on input line 121.
+(luatex.def)             Requested size: 298.86581pt x 228.85443pt.
+<chap04/LOF_result.png, id=116, 377.91188pt x 267.24844pt>
 File: chap04/LOF_result.png Graphic file (type png)
 <use chap04/LOF_result.png>
-Package luatex.def Info: chap04/LOF_result.png  used on input line 39.
-(luatex.def)             Requested size: 240.8994pt x 149.80931pt.
-[19
-
-
-<./chap04/LOF_dataset.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Package luatex.def Info: chap04/LOF_result.png  used on input line 129.
+(luatex.def)             Requested size: 377.91095pt x 267.24779pt.
+ [19<./chap04/LOF_dataset.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
 
 [20<./chap04/LOF_result.png>]
-<chap04/varyK.png, id=122, 271.76532pt x 173.89969pt>
+<chap04/varyK.png, id=125, 362.10281pt x 231.11343pt>
 File: chap04/varyK.png Graphic file (type png)
 <use chap04/varyK.png>
-Package luatex.def Info: chap04/varyK.png  used on input line 106.
-(luatex.def)             Requested size: 271.76465pt x 173.89925pt.
- [21<./chap04/varyK.png>]
-<chap04/varyb.png, id=128, 271.76532pt x 162.6075pt>
+Package luatex.def Info: chap04/varyK.png  used on input line 212.
+(luatex.def)             Requested size: 362.10191pt x 231.11287pt.
+ [21]
+<chap04/varyb.png, id=130, 362.10281pt x 216.81pt>
 File: chap04/varyb.png Graphic file (type png)
 <use chap04/varyb.png>
-Package luatex.def Info: chap04/varyb.png  used on input line 128.
-(luatex.def)             Requested size: 271.76465pt x 162.6071pt.
-<chap04/varyK2.png, id=129, 271.76532pt x 162.6075pt>
+Package luatex.def Info: chap04/varyb.png  used on input line 234.
+(luatex.def)             Requested size: 362.10191pt x 216.80946pt.
+ [22<./chap04/varyK.png>]
+<chap04/varyK2.png, id=134, 362.10281pt x 216.81pt>
 File: chap04/varyK2.png Graphic file (type png)
 <use chap04/varyK2.png>
-Package luatex.def Info: chap04/varyK2.png  used on input line 158.
-(luatex.def)             Requested size: 271.76465pt x 162.6071pt.
- [22<./chap04/varyb.png>]
-<chap04/varyB2.png, id=134, 271.76532pt x 162.6075pt>
+Package luatex.def Info: chap04/varyK2.png  used on input line 264.
+(luatex.def)             Requested size: 362.10191pt x 216.80946pt.
+ [23<./chap04/varyb.png>]
+<chap04/varyB2.png, id=138, 362.10281pt x 216.81pt>
 File: chap04/varyB2.png Graphic file (type png)
 <use chap04/varyB2.png>
-Package luatex.def Info: chap04/varyB2.png  used on input line 181.
-(luatex.def)             Requested size: 271.76465pt x 162.6071pt.
-) [23<./chap04/varyK2.png><./chap04/varyB2.png>] (./Chap05/Conclusion.tex
-Chapter 5.
-) [24
+Package luatex.def Info: chap04/varyB2.png  used on input line 287.
+(luatex.def)             Requested size: 362.10191pt x 216.80946pt.
+ [24<./chap04/varyK2.png><./chap04/varyB2.png>]) [25]
+(./Chap05/Conclusion.tex
+Chapter 4.
+) [26
 
 
-] (./Chap06/References.tex [25
+] (./DissertationGuidelinesV4_5.bbl) [27
 
 
-]) [26] (./DissertationGuidelinesV4_5.aux
-(./FrontPages.aux))
+]
+(./DissertationGuidelinesV4_5.aux (./FrontPages.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
 )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 106 ({)
+### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 27423 strings out of 494447
+ 27431 strings out of 494447
  100000,794899 words of node,token memory allocated
- 3923 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 565 kern, 151 attribute, 64 glue_spec, 151 
+ 4191 words of node memory still in use:
+   7 hlist, 2 vlist, 3 rule, 2 glue, 593 kern, 175 attribute, 67 glue_spec, 175 
 attribute_list, 2 write nodes
-   avail lists: 2:809,3:131,4:80,5:62,6:47,7:3126,8:231,9:272,10:19,11:258
- 30269 multiletter control sequences out of 65536+200000
- 70 fonts using 21771023 bytes
- 55i,12n,69p,867b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
+   avail lists: 2:597,3:132,4:80,5:61,6:48,7:3111,8:149,9:256,10:19,11:257
+ 30274 multiletter control sequences out of 65536+200000
+ 72 fonts using 23103567 bytes
+ 55i,12n,69p,869b,624s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/program files/miktex 2.9/fonts/opentype/public/lm/lmmono12-regular.otf><C:/W
 INDOWS/Fonts/timesbi.ttf><C:/WINDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/times.tt
 f><C:/WINDOWS/Fonts/timesbd.ttf><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
@@ -1669,9 +1678,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy8.pfb>
-Output written on DissertationGuidelinesV4_5.pdf (36 pages, 451555 bytes).
+Output written on DissertationGuidelinesV4_5.pdf (37 pages, 446575 bytes).
 
-PDF statistics: 208 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

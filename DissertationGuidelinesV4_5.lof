@@ -2,11 +2,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Limitations of Global outlier detection}}{8}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces 2-D Dataset used for LOF}}{19}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces LOF values for synthetic 2-D dataset}}{20}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when K changes while b is kept constant }}{21}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when b changes while K is constant}}{22}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when K changes while b is constant}}{23}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when K changes while b is constant}}{23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 2-D Dataset used for LOF}}{17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 2-D Dataset used for LOF}}{19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces LOF values for synthetic 2-D dataset}}{20}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when $K$ changes while $b$ is kept constant }}{22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when $b$ changes while $K$ is constant}}{23}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when $K$ changes while $b$ is constant}}{24}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces TPR/FPR for MiLOF and MiLOF with RKNN when $K$ changes while $b$ is constant}}{24}
 \addvspace {10\p@ }

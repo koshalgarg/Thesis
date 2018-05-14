@@ -17,7 +17,7 @@ domains. Sometimes in applications like sensor networks the anomalies has to be 
 	 However, outlier detection on streaming data is particularly
 challenging, since the volume of data to be analyzed is
 effectively unbounded and cannot be stored indefinitely in
-memory for processing [4]. Data streams are generated at a high data rate and hence the computation speed and efficiency of algorithm has to be high. An outlier detection system in wireless sensor
+memory for processing \cite{c}. Data streams are generated at a high data rate and hence the computation speed and efficiency of algorithm has to be high. An outlier detection system in wireless sensor
 networks must work with the limited memory in each
 sensor node in order to detect rare events in near real time. In the
 case of data streams, where the number of data points is
@@ -32,12 +32,12 @@ behavior.
 
 \section{Overview}
 
-Some of the prerequisites that is essential for the study of anomaly detection are describes in this section. Depending on different domains and problems and data types, approach of anomaly detection varies. 
+Some of the prerequisites that is essential for the study of anomaly detection are described in this section. Depending on different domains and data types, approach of anomaly detection varies. 
 \subsection{Aspects of Anomaly Detection}
 
 \begin{enumerate}
 	\item \textit{Nature of Input Data} : Input
-	is generally a collection of data instances. Each data instance contains some attribute values. Attributes can be of different type such as binary, categorical, or continuous.For nearest-neighbor-based techniques, the pairwise distance between instances might be
+	is generally a collection of data instances. Each data instance contains some attribute values. Attributes can be of different type such as binary, categorical, or continuous. For nearest-neighbor-based techniques, the pairwise distance between instances might be
 	provided in the form of a distance or similarity matrix. In such cases, techniques that
 	require original data instances are not applicable.
 	
@@ -49,13 +49,13 @@ Some of the prerequisites that is essential for the study of anomaly detection a
 		
 		\item \textit{Contextual Anomalies} : If a data point is considered anomaly in certain context but not otherwise then it  is called contextual or conditional anomaly \cite{contextual}. For example 1000 dollar expense per week may be considered anomaly in a normal week but not in Christmas week.
 		
-		\item \textit{Collective Anomalies} : If a collection of related data points are anomalous with respect to entire data set then they are termed as collective anomalies. Individually these data points may not be anomalous but taking together they are outliers. Collective Outliers are mainly explored for sequence data \cite{ca1},
+		\item \textit{Collective Anomalies} : If a collection of related data points are anomalous with respect to entire data set then they are termed as collective anomalies. Individually these data points may not be anomalous but taking together they are outliers. Collective outliers are mainly explored for sequence data \cite{ca1},
 		graph data \cite{ca2} and spatial data \cite{ca3}.
 	\end{enumerate}
 	
 	
 	
-	\item \textit{Data Labels}
+	\item \textit{Data Labels} : 
 	Data labels for each instance shows whether it is a normal point or anomalous. Labeling is often done manually by a human expert which is clearly very expensive and time taking. Getting a training data set that contains the representative of all possible outliers is very difficult. Based on the extend of availability of labeled data, anomaly detection technique can operate in three modes
 	
 	\begin{enumerate}
@@ -91,7 +91,7 @@ Some of the prerequisites that is essential for the study of anomaly detection a
 	outlier in th data set.
 	
 	
-	\item Measurment errors - This error occurs artificially while measuring the reading of
+	\item Measurment errors : This error occurs artificially while measuring the reading of
 	the data set. This can occur due to a faulty machine or due to human error. For eg- While testing the blood sample of any patient, the machine can give false
 	reading for the sugar level test which will be declared as an outlier.
 	
@@ -99,9 +99,9 @@ Some of the prerequisites that is essential for the study of anomaly detection a
 	and many manipulation is being made. While doing so, outliers can be accidently
 	introduced to the data set or the changes made to particular data point can also
 	result in outliers.
-	\item Sampling errors (extracting or mixing data from wrong or various sources)
+	\item Sampling errors : Extracting or mixing data from wrong or various sources
 	
-	\item Natural :  Those that are not a product of an error are called novelties.
+	\item Natural : Those that are not a product of an error are called novelties.
 	
 \end{itemize} 
 
@@ -201,11 +201,11 @@ We need an incremental outlier detection technique that can work online and dete
 	
 	
 	
-\section{Contribution of the thesis}
+\section{Contribution of the Thesis}
 In order to achieve the objective of this project, we have used Local Outlier Factor as the anomaly score to find out anomalies in datasets and then compare these results with different incremental outlier detection techniques. 
 
 \par
-In incremental approaches, we don't have enough memory to store all the data points. Gradually the size will increase and hence the computation time. In order to do it in a memory efficient way we have to delete some of the data points and summarize them. But the selection of the points that has to be deleted need to be done carefully because these points may have vital information for the upcoming data points. We propose a memory efficient incremental outlier detection technique which is an extension to Memory efficient Incremental LOF(MiLOF) which uses Reverse K Nearest Neighbors(RKNN) counts for all the data points.
+In incremental approaches, we don't have enough memory to store all the data points. Gradually the size will increase and hence the computation time. In order to do it in a memory efficient way we have to delete some of the data points and summarize them. But the selection of the points that has to be deleted need to be done carefully because these points may have vital information for the upcoming data points. We propose a memory efficient incremental outlier detection technique which is an extension to Memory efficient Incremental LOF(MiLOF) which uses Reverse $K$ Nearest Neighbors(RKNN) counts for all the data points.
 
 \section{Thesis Organization}
 
@@ -213,15 +213,13 @@ The thesis is organized as follows.
 
 \begin{itemize}
 	
-\item  \textbf{Chapter 2 :} This chapter includes the summary of different approaches which are proposed for anomaly detection.
+\item  \textbf{Chapter 2 :} This chapter includes the summary of different approaches which are available for anomaly detection.
 
-\item  \textbf{Chapter 3 :} This chapter describes the contribution of the thesis. In this chapter our proposed work is explained in detail. 
-
-
-\item  \textbf{Chapter 4 :} In this chapter we have shown the results for different approaches and compared their results.
+\item  \textbf{Chapter 3 :} This chapter describes the contribution of the thesis. In this chapter we have explained our proposed work and compared the results with previous approaches.
 
 
-\item \textbf{Chapter 5 :} This chapter summarizes overall contributions and discusses a future research
+
+\item \textbf{Chapter 4 :} This chapter summarizes overall contributions and discusses a future research
 directions of the thesis.
 
  

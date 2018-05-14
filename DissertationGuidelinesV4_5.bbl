@@ -1,3 +1,80 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{hawkins}
+Hawkins, D., 1980.
+\newblock {\em Identification of outliers}.
+\newblock Chapman and Hall, London.
+
+\bibitem{c}
+Pokrajac, D., 2007.
+\newblock ``Incremental local outlier detection for data streams''.
+\newblock In Proceedings of IEEE Symposium on Computational Intelligence and
+  Data Mining, pp.~504--515.
+
+\bibitem{a}
+Chandola, V., Banerjee, A., and Kumar, V., 2009.
+\newblock ``Anomaly detection: A survey''.
+\newblock {\em ACM Comput. Surv., {\bf 41}}(3), July, pp.~15:1--15:58.
+
+\bibitem{contextual}
+Song, X., Wu, M., Jermaine, C., and Ranka, S., 2007.
+\newblock ``Conditional anomaly detection''.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering, {\bf
+  19}}(5), May, pp.~631--645.
+
+\bibitem{ca1}
+Warrender, C., Forrest, S., and Pearlmutter, B., 1999.
+\newblock ``Detecting intrusions using system calls: alternative data models''.
+\newblock In Proceedings of the 1999 IEEE Symposium on Security and Privacy
+  (Cat. No.99CB36344), pp.~133--145.
+
+\bibitem{ca2}
+Noble, C.~C., and Cook, D.~J., 2003.
+\newblock ``Graph-based anomaly detection''.
+\newblock In Proceedings of the Ninth ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining, KDD '03, ACM, pp.~631--636.
+
+\bibitem{ca3}
+Shekhar, S., Lu, C.-T., and Zhang, P., 2001.
+\newblock ``Detecting graph-based spatial outliers: Algorithms and applications
+  (a summary of results)''.
+\newblock In Proceedings of the Seventh ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining, KDD '01, ACM, pp.~371--376.
+
+\bibitem{b}
+Breunig, M.~M., Kriegel, H.-P., Ng, R.~T., and Sander, J., 2000.
+\newblock ``Lof: Identifying density-based local outliers''.
+\newblock {\em SIGMOD Rec., {\bf 29}}(2), May, pp.~93--104.
+
+\bibitem{fraud}
+Bolton, R.~J., Hand, D.~J., and H, D.~J., 2001.
+\newblock ``Unsupervised profiling methods for fraud detection''.
+\newblock In Proc. Credit Scoring and Credit Control VII, pp.~5--7.
+
+\bibitem{medical}
+Lin, J., Keogh, E., Fu, A., and Van~Herle, H., 2005.
+\newblock ``Approximations to magic: Finding unusual medical time series''.
+\newblock In Proceedings of the 18th IEEE Symposium on Computer-Based Medical
+  Systems, CBMS '05, IEEE Computer Society, pp.~329--334.
+
+\bibitem{f}
+Tang, J., Chen, Z., Fu, A.~W., and Cheung, D.~W., 2007.
+\newblock ``Capabilities of outlier detection schemes in large datasets,
+  framework and methodologies''.
+\newblock {\em Knowledge and Information Systems, {\bf 11}}(1), Jan,
+  pp.~45--84.
+
+\bibitem{e}
+Angiulli, F., and Fassetti, F., 2009.
+\newblock ``Dolphin: An efficient algorithm for mining distance-based outliers
+  in very large datasets''.
+\newblock {\em ACM Trans. Knowl. Discov. Data, {\bf 3}}(1), Mar.,
+  pp.~4:1--4:57.
+
+\bibitem{d}
+Salehi, M., Leckie, C., Bezdek, J., Vaithianathan, T., and Zhang, X., 2016.
+\newblock ``Fast memory efficient local outlier detection in data streams''.
+\newblock {\em IEEE Transactions on Knowledge and Data Engineering, {\bf
+  28}}(12), 12, pp.~3246--3260.
 
 \end{thebibliography}

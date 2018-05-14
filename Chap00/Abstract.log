@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  11 MAY 2018 16:16
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.5.6)  14 MAY 2018 14:16
  restricted system commands enabled.
 **Abstract.tex
 (./Abstract.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 3.281 seconds
+luaotfload | main : initialization completed in 0.576 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
 l.2 \SpecialTitle
@@ -90,9 +90,45 @@ l.12 L
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
 []Local
+ []
+
+
+Overfull \hbox (8.78014pt too wide) in paragraph at lines 12--13
+\OML/cmm/m/it/10 m$
+ []
+
+
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 12--13
+\OML/cmm/m/it/10 c$
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 I
+    n MiLOF we delete the points which came earlier. These points which are ...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--20
+[]In
+ []
+
+
+Overfull \hbox (9.20833pt too wide) in paragraph at lines 19--20
+\OML/cmm/m/it/10 K$
  []
 
 
@@ -120,12 +156,12 @@ c: C:/Users/me/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10
 
 
 Here is how much of LuaTeX's memory you used:
- 13 strings out of 494447
- 100000,89155 words of node,token memory allocated 11301 words of node memory still in use:
-   8 hlist, 4 local_par, 1 dir, 262 glue, 6 kern, 10 penalty, 1285 glyph, 17 att
-ribute, 35 glue_spec, 17 attribute_list, 1 temp nodes
-   avail lists: 2:4,4:144,5:2,7:74,8:1,9:1,10:143
- 4270 multiletter control sequences out of 65536+200000
- 16 fonts using 854983 bytes
- 15i,1n,9p,839b,109s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 26 strings out of 494447
+ 100000,89155 words of node,token memory allocated 16629 words of node memory still in use:
+   17 hlist, 5 local_par, 1 dir, 3 math, 389 glue, 8 kern, 16 penalty, 1894 glyp
+h, 27 attribute, 35 glue_spec, 27 attribute_list, 1 temp nodes
+   avail lists: 2:5,4:99,5:3,8:1,9:1,10:98
+ 4272 multiletter control sequences out of 65536+200000
+ 26 fonts using 1476487 bytes
+ 18i,1n,12p,841b,109s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

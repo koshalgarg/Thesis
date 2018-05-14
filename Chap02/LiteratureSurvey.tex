@@ -16,36 +16,45 @@
 	
 	
 		\begin{itemize}
-		\item \textbf{K-distance} :The distance between a data point p
-		and its $K^{th}$ nearest neighbor (K-NN).
+		\item \textbf{$K$-distance} for a point $p$ is defined as the distance between $p$
+		and its $K^{th}$ nearest neighbor ($K$-NN).
 		
-		\item \textbf{Reachability distance (reach-dist)} of a data point p
-		with respect to another data point o
+		\item \textbf{Reachability distance (reach-dist)} of a data point $p$
+		with respect to another data point $o$
 		
 		\[ reach-dist_K(p,o)=max\{k-distance(o),d(p,o)\}  \]
 		
-		where d(p,o) is the euclidean distance between p
-		and o.
+		where $d(p,o)$ is the euclidean distance between $p$
+		and $o$. 
 		
 		
-		\item \textbf{Local Reachability Density(lrd)}  of a data point p
+		\item \textbf{Local Reachability Density(lrd)}  of a data point $p$ is defined as:
 		
 		
 		\[  lrd_k(p) =  \bigg( \frac{1}{K} \sum_{o \in N_{(p,k)}} reach-dist(p,o)   \bigg)^{-1}  \]
 		
 		
-		where $N_{(p,k)}$ is the set of k nearest neighbors of p.
+		where $N_{(p,k)}$ is the set of $K$ nearest neighbors of $p$.
+		
+		Thus, it can be observed from the formula that the local reachability distance of
+		an object $p$ is the inverse of the average taken over the reachability distance of the $K$
+		neighbors of the object $p$
 		
 		\item
-		\textbf{Local Outlier Factor(LOF)}  of a data point p
+		\textbf{Local Outlier Factor(LOF)}  of a data point $p$
 		
 		\[  LOF_K(p) = \frac{1}{K} \sum_{o \in N_{(p,k)}} \frac{lrd_K(o)}{lrd_K(p)}  \]
+		
+		The local outlier factor of an object $p$ captures the degree to which an object is an
+		outlier. As can be seen from the formula, local outlier factor of an object is defined
+		to be the average ratio of the reachability distance of the object $p$ to the reachability
+		distance of its $K$ neighbors.
 		
 	\end{itemize}
 	
 		\begin{figure}[H]
 		\centering
-		\includegraphics{chap01/localvsglobal.png}
+		\includegraphics{chap01/localvsglobal2.png}
 		\caption{Limitations of Global outlier detection}
 	\end{figure}
 	
@@ -53,7 +62,7 @@
 	
 	\par 
 	Local density based outlier detection is preferred over global because global density based techniques performs poorly for datasets with varying densities.
-	Consider the 2-D data set shown in Figure 2.1, both points p1 and p2 should be detected as outliers. But if we consider global density, p2 will not be detected as outlier because of low density of cluster C1. For a point q in cluster C1, the distance between q and its nearest neighbor will always be greater than distance between p2 and its nearest neighbor.
+	Consider the 2-D data set shown in Figure 2.1, both points $p_1$ and $p_2$ should be detected as outliers. But if we consider global density, $p_2$ will not be detected as outlier because of low density of cluster $C_1$. For a point $q$ in cluster $C_1$, the distance between $q$ and its nearest neighbor will always be greater than distance between $p_2$ and its nearest neighbor. This problem can be eliminated by using local density based outlier detection techniques.
 	
 
 
@@ -79,7 +88,7 @@
 	\begin{enumerate}
 		\item \textit{Periodic LOF} : Static LOF is applied periodically on entire data set every time new data blocks are entered. The problem with such approach is that a data point which may be anomalous while added may not be detected as outlier later as many other points are added. they may create a cluster of their own and outliers will be missed. If LOF is computed each time a data point is added, the change is behavior can be detected at that moment.
 		
-		\item \textit{Supervised LOF} : K-distance, lrd and LOF of the data points are precomputed. Any new data point that arrives all these parameters are computed without updating for previous points. As a result the LOF accuracy decreases. 
+		\item \textit{Supervised LOF} : $K$-distance, lrd and LOF of the data points are precomputed. Any new data point that arrives all these parameters are computed without updating for previous points. As a result the LOF accuracy decreases. 
 		
 		\item \textit{Iterated LOF} : Aplpy static LOF every time a new data point enters. This gives high accuracy at a cost of very high computational time. 
 		
@@ -91,11 +100,11 @@
 		\caption{iLOF Insertion}
 		\begin{algorithmic}
 			\STATE  
-			\STATE INPUT:  A data point $p_t$ at time t
+			\STATE INPUT:  A data point $p_t$ at time $t$
 			\STATE OUTPUT: LOF value LOF($p_t$)
 			\STATE
 			
-			\STATE Compute KNN and K-distance of $p_t$
+			\STATE Compute KNN and $K$-distance of $p_t$
 			
 			\FOR {all o \in KNN($p_t$)}	
 			
@@ -105,9 +114,9 @@
 			
 			\STATE  $S_{update}$ \leftarrow Reverse KNNs of $p_t$
 			
-			\FOR{ all o \in $S_{update}$ and q \in $N_{(o,k)}$}
+			\FOR{ all $o$ \in $S_{update}$ and $q$ \in $N_{(o,k)}$}
 			
-			\STATE Update K-distance(o) and reach-dist(q,o)
+			\STATE Update $K$-distance($o$) and reach-dist($q$,$o$)
 			
 			\IF {o \in  $N_{(q,k)}$}
 			
@@ -131,18 +140,18 @@
 In Incremental approach, LOF score is computed as soon as a data enters. It is determined whether it is outlier or not. LOF of other data points are also updated. 
 
 
-The algorithm for insertion of a data point in iLOF is given in Algorithm 1. First we compute the K nearest neighbors of new point $p_t$. To update the led and LOf of affected points we compute the reverse K nearest neighbors(RKNN) of these points. All these points are kept in an array called $S_update$. Finally for all these points, lrd and LOF value is computed.  
+The algorithm for insertion of a data point in iLOF is given in Algorithm 1. First we compute the $K$ nearest neighbors of new point $p_t$. To update the led and LOf of affected points we compute the reverse $K$ nearest neighbors(RKNN) of these points. All these points are kept in an array called $S_update$. Finally for all these points, lrd and LOF value is computed.  
 
 	
 
-\section{Dolphin}
+\section{Dolphin : For Mining Distance-based Outliers
+	in Very Large Datasets}
 
 Dolphin is a distance based outlier detection technique for disk resident datasets. The algorithm receives
-as input a disk-resident dataset DS and parameters k and R, and outputs all
+as input a disk-resident dataset DS and parameters $k$ and $R$, and outputs all
 and only the DB(k,R) outliers of DS. Dolphin does two scans to find all the outlier points \cite{e}.
 
-\subsection{Algorithm}
-
+\par 
 DOLPHIN gains efficiency by naturally merging together in a unified
 schema three strategies, namely
 
@@ -155,18 +164,18 @@ schema three strategies, namely
 \end{enumerate}
 
 
-Dolphin uses a part of the main memory and loads a part of the dataset. It maintains a data structure called INDEX while scanning. According to Dolphin , points which do not have at least K points in the radius of R are considered anomalous. Each DBO(Distance Based Outliers) node in INDEX data structure contains
+Dolphin uses a part of the main memory and loads a part of the dataset. It maintains a data structure called INDEX while scanning. According to Dolphin , points which do not have at least K points in the radius of $R$ are considered anomalous. Each DBO(Distance Based Outliers) node in INDEX data structure contains
 
 \begin{enumerate}
-	\item n.obj : Original Object 
-	\item n.id : id of object 
-	\item n.nn[h] : an integer array  
+	\item $n.obj$ : Original Object 
+	\item $n.id$ : id of object 
+	\item $n.nn[h]$ : an integer array  
 \end{enumerate}
 
-n.nn[i] is the number of points which lie at a distance of  \[ \bigg[   {\frac{R}{h}} (i-1) , {\frac{R}{h} } i \bigg] \]  from n.obj.
+$n.nn[i]$ is the number of points which lie at a distance of  \[ \bigg[   {\frac{R}{h}} (i-1) , {\frac{R}{h} } i \bigg] \]  from n.obj.
 
 \[  n.rad = {\frac{R}{h}} i  \ \ \ \           (1 \leq i \leq h) \]
-where i i sthe smallest integer such that 
+where $i$ is the smallest integer such that 
 
 \[  \sum_{j \leq i} n.nn[j]  \ \ \      is \ at \ least \ K-1 \]
 
@@ -270,7 +279,7 @@ In first scan each of the incoming data point, it is decided whether a it is inl
 
 \subsection{Pivoting Based Search Algorithm}
 
-Instead of computing all pairwise distances between points, some pivot points are taken and pairwise distance between all other points are computed. If we have to find distance between two points x and y ,according to triangles inequality
+Instead of computing all pairwise distances between points, some pivot points are taken and pairwise distance between all other points are computed. If we have to find distance between two points $x$ and $y$ ,according to triangles inequality
 
 \[  d(x,y) \geq |{d(x,p) - d(y,p)}| \]
 
@@ -279,7 +288,7 @@ Instead of computing all pairwise distances between points, some pivot points ar
 
 \[ D(x,y) =MAX_{1 < i <m} D_p(x,y) \]
 
-$D_p(x,y)$ is lower bound of d(x,y). We need to find y such that D(x,y) $<$ R. This returns a superset of y such that d(x,y) $<$ R.
+$D_p(x,y)$ is lower bound of $d(x,y)$. We need to find $y$ such that $D(x,y)$ $<$ $R$. This returns a superset of $y$ such that $d(x,y)$ $<$ $R$.
 
 
 
@@ -287,34 +296,41 @@ $D_p(x,y)$ is lower bound of d(x,y). We need to find y such that D(x,y) $<$ R. T
 
 \section{Memory Efficient Incremental Local Outlier Factor (MiLOF)}
 
-Local Outliers detection in data streams when limited memory is available. It is impractical to store all the instances of data streams. Some of the points has to be removed and summarized. Memory available is just sufficient to store K-Distance, lrd and LOF of m data points only.
+Local Outliers detection in data streams when limited memory is available. It is impractical to store all the instances of data streams. Some of the points has to be removed and summarized. Memory available is just sufficient to store $K$-Distance, lrd and LOF of $m$ data points only.
 
-The available m memory is divided in two parts of size b and c to store original points and summarized points respectively. When memory limit is reached, first ${\frac{b}{2}}$  data points are summarized to c clusters and deleted to free memory \cite{d}. If there already exists summarized data, the old and new cluster centers are merged. Hence at any time maximum memory used is b=m+c.
- Three steps of MiLOF are 
+The available $m$ memory is divided in two parts of size $b$ and $c$ to store original points and summarized points respectively. When memory limit is reached, first ${\frac{b}{2}}$  data points are summarized to $c$ clusters and deleted to free memory \cite{d}. If there already exists summarized data, the old and new cluster centers are merged. Hence at any time maximum memory used is $m=b+c$.
+
+
+Three steps of MiLOF are 
 
 \subsection{Summarization}
-Whenever memory reaches limit b, summarization phase is invoked. This phase summarizes first ${\frac{b}{2}}$ points, their K-distance, lrd and LOF and deletes these points from memory. Recent points are retained because data points might have evolved with time and recent points are most important. As the width of the summarization window decreases, it resembles iLOF. So MiLOF is direct generalization of iLOF.
+Whenever memory reaches limit $b$, summarization phase is invoked. This phase summarizes first ${\frac{b}{2}}$ points, their $K$-distance, lrd and LOF and deletes these points from memory. Recent points are retained because data points might have evolved with time and recent points are most important. As the width of the summarization window decreases, it resembles iLOF. So MiLOF is direct generalization of iLOF.
 
 \par 
 Summarization  is explained in algorithm 5.
-In summarization, if memory is reached first $\frac{b}{2}$ points are summarized to c clusters. K-distance, lrd and LOF for these cluster centers are computed by the following formulas.  
+In summarization, if memory is reached first $\frac{b}{2}$ points are summarized to $c$ clusters. K-distance, lrd and LOF for these cluster centers are computed by the following formulas.  
 
 \begin{itemize}
-	\item K-Distance of cluster center $v^i_j$ \in $V^i$ 
+	\item $K$-Distance of cluster center $v^i_j$ \in $V^i$ is defined as the average $K$-distances of the points in each of the clusters.
+	
 	
 	
 		\[  K-Distance(v^i_j) = \frac{\sum_{p \in C^i_j } K-Distance(p)}{| C^i |} \]
 		
 		
-	 \item lrd of cluster center $v^i_j$ \in $V^i$ 
+	 \item lrd of cluster center $v^i_j$ \in $V^i$ is defined as the average lrd of the points in each of the clusters.
+	  
 		
 		
 		\[  lrd_k(v^i_j) = \frac{\sum_{p \in C^i_j } lrd_k(p)}{| C^i |} \]
 		
-		\item LOF of cluster center $v^i_j$ \in $V^i$ 
+		
+		\item LOF of cluster center $v^i_j$ \in $V^i$ is defined as the average LOF of the points in each of the clusters.
+		
 		
 		
 		\[  LOF_k(v^i_j) = \frac{\sum_{p \in C^i_j } LOF_k(p)}{| C^i |} \]
+		
 	
 \end{itemize}
 
@@ -357,9 +373,9 @@ In summarization, if memory is reached first $\frac{b}{2}$ points are summarized
 
 \subsection{Merging}
 
-Summarization is performed every time new $\frac{b}{2}$ new data points arrives. Clustering these points gives c cluster centers $V^i$. These clusters are to be merged with old c cluster centers $V{i-1}$ so that finally only c centers are available. Cluster centers X={$V^i$ U $V^{i-1}$} are merged using a weighted clustering algorithm where weight of each center is no of objects in that cluster. 
+Summarization is performed every time new $\frac{b}{2}$ new data points arrives. Clustering these points gives c cluster centers $V^i$. These clusters are to be merged with old $c$ clusters centers $V{i-1}$ so that finally only $c$ centers are available. Cluster centers X={$V^i$ U $V^{i-1}$} are merged using a weighted clustering algorithm where weight of each center is no of objects in that cluster. 
 
 
 \subsection{Revised Insertion}
-Whenever a new data points arrives, LOF value for it is computed similar to iLOF with only difference that iLOF uses only data points to compute LOF where as in revised insertion we use both the data points and the cluster centers. While calculating the KNN, if any of the point is cluster center then it is assumed that all other nearest neighbor belongs to the same cluster. Hence distance from the point and that cluster center is taken as the K-distance for that point.  
+Whenever a new data points arrives, LOF value for it is computed similar to iLOF with only difference that iLOF uses only data points to compute LOF where as in revised insertion we use both the data points and the cluster centers. While calculating the KNN, if any of the point is cluster center then it is assumed that all other nearest neighbor belongs to the same cluster. Hence distance from the point and that cluster center is taken as the $K$-distance for that point.  
 
